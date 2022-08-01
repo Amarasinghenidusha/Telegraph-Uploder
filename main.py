@@ -3,6 +3,9 @@ import os
 from pyrogram import filters
 from telegraph import upload_file
 
+# Your BOT Token
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
 from AnkiVector import pbot as app
 
 @app.on_message(filters.command("start"))
