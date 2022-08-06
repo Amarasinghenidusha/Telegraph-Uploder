@@ -3,10 +3,12 @@ import os
 from pyrogram import filters
 from telegraph import upload_file
 
-# Your BOT Token
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-
-from AnkiVector import pbot as app
+app = Client(
+   "Telegraph Uploader",
+   api_id=Config.APP_ID,
+   api_hash=Config.API_HASH,
+   bot_token=Config.BOT_TOKEN,
+)
 
 @app.on_message(filters.command("start"))
 async def telegraph(client, message):
@@ -55,3 +57,6 @@ async def telegraph(client, message):
         )
     finally:
         os.remove(download_location)
+        
+print("Bot Start ✅")
+app.run()
