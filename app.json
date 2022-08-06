@@ -1,13 +1,74 @@
 {
-  "name": "TikTok-DL-BOT",
-  "description": "Telegram BOT to Download TikTok Videos ",
-  "repository": "https://github.com/Single-Developers/TikTok-DL-BOT",
-  "logo": "https://telegra.ph/file/05ce45e35c9c93c8d001f.jpg",
-  "keywords": ["telegram", "bot", "api", "tiktok", "tiktok-api"],
-  "env": {
-    "BOT_TOKEN": {
-            "description": "API Token for your Telegram bot (Take it from @BotFather)",
-            "required": true
+
+    "name": "Telegraph Uploader Bot",
+
+    "description": "Telegraph Uploader Bot",
+
+    "logo": "https://telegra.ph/file/df88cd27fc2221d3393be.jpg",
+
+    "keywords": [
+
+        "Telegraph",
+
+        "Uploader",
+
+        "Telegram Bot",
+
+    ],
+
+    "repository": "https://github.com/Amarasinghenidusha/Telegraph-Uploder",
+
+    "env": {
+
+        "BOT_TOKEN": {
+
+            "description": "Your Telegram Bot Token from @BotFather",
+
+            "value": ""
+
+        },
+
+        "API_HASH": {
+
+            "description": "Your API Hash from my.telegram.org",
+
+            "value": ""
+
+        },
+
+        "APP_ID": {
+
+            "description": "Your APP ID from my.telegram.org",
+
+            "value": ""
+
+        }
+
+    },
+
+    "addons": [],
+
+    "buildpacks": [
+
+        {
+
+            "url": "heroku/python"
+
+        }
+
+    ],
+
+    "formation": {
+
+        "worker": {
+
+            "quantity": 1,
+
+            "size": "free"
+
+        }
+
     }
-  }
+
 }
+
