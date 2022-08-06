@@ -2,6 +2,7 @@ import os
 
 from pyrogram import filters,Client
 from telegraph import upload_file
+from config import Config
 
 app = Client(
    "Telegraph Uploader",
