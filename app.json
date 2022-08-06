@@ -1,74 +1,43 @@
 {
-
-    "name": "Telegraph Uploader Bot",
-
-    "description": "Telegraph Uploader Bot",
-
-    "logo": "https://telegra.ph/file/df88cd27fc2221d3393be.jpg",
-
+    "name": "Telegraph Uploader",
+    "description": "A bot that can download songs.",
+    "logo": "https://telegra.ph/file/290e565c53f0aac27f518.jpg",
     "keywords": [
-
         "Telegraph",
-
         "Uploader",
-
-        "Telegram Bot",
-
+        "STM_Dev",
+        "API"
     ],
-
+    "website": "https://www.nidushaofficial.tk",
     "repository": "https://github.com/Amarasinghenidusha/Telegraph-Uploder/",
-
+    "success_url": "https://t.me/SCProjectsLK",
     "env": {
-
         "BOT_TOKEN": {
-
             "description": "Your Telegram Bot Token from @BotFather",
-
             "value": ""
-
         },
-
         "API_HASH": {
-
             "description": "Your API Hash from my.telegram.org",
-
             "value": ""
-
         },
-
-        "APP_ID": {
-
+        "API_ID": {
             "description": "Your APP ID from my.telegram.org",
-
             "value": ""
-
         }
-
     },
-
     "addons": [],
-
     "buildpacks": [
-
         {
-
             "url": "heroku/python"
-
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
         }
-
     ],
-
     "formation": {
-
         "worker": {
-
             "quantity": 1,
-
             "size": "free"
-
         }
-
     }
-
 }
-
