@@ -15,7 +15,7 @@ app = Client(
 async def telegraph(client, message):
     replied = message.reply_to_message
     if not replied:
-        await message.reply("Hey..!I'm Telegraph Uploader😁\n\n♻️ 24 Hour Active\n🚀 More Fast Downloads\n📤Send /Uplo Reply to File.\n\n☘️ DᕮᐯᕮᒪOᑭᕮR : @NidushaAmarasinghe\n☘️ sυρρσят : @STM_Developers")
+        await message.reply("👋Hey..!I'm Telegraph Uploader😁\n\n♻️ 24 Hour Active\n🚀 More Fast Downloads\n📤Send /Uplo Reply to File.\n\n☘️ DᕮᐯᕮᒪOᑭᕮR : @NidushaAmarasinghe\n☘️ sυρρσят : @STM_Developers")
         return
 
 
